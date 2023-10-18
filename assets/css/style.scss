@@ -1,0 +1,535 @@
+@font-face {
+    font-family: "Barlow";
+    src: url("../fonts/Barlow/Barlow-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Fraunces";
+    src: url("../fonts/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf")
+        format("truetype");
+}
+
+/* Colors */
+$soft-red: hsl(7, 99%, 70%);
+$yellow: hsl(51, 100%, 49%);
+$dark-desaturated-cyan: hsl(167, 40%, 24%);
+$dark-blue: hsl(198, 62%, 26%);
+$dark-moderate-cyan: hsl(168, 34%, 41%);
+$light-moderate-cyan: #90d4c5;
+
+$very-dark-desaturated-blue: hsl(212, 27%, 19%);
+$very-dark-grayish-blue: hsl(213, 9%, 39%);
+$dark-grayish-blue: hsl(232, 10%, 55%);
+$grayish-blue: hsl(210, 4%, 67%);
+$white: hsl(0, 0%, 100%);
+
+header {
+    width: 100%;
+    position: absolute;
+
+    #toggler {
+        filter: brightness(0) invert(1);
+        color: $white !important;
+        border: none;
+
+        :focus {
+            box-shadow: none !important;
+        }
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none !important;
+    }
+
+    .navbar-collapse {
+        background-color: white;
+        margin-top: 45px;
+        padding: 20px 0;
+
+        .navbar-nav {
+            display: flex;
+            align-items: center;
+
+            .nav-item {
+                font-size: 1.2rem;
+                font-family: "Barlow";
+                font-weight: 600;
+                margin: 10px;
+
+                .nav-link {
+                    color: $dark-grayish-blue;
+                }
+            }
+
+            .contact-button {
+                font-family: "Fraunces";
+                text-transform: uppercase;
+                font-weight: 800;
+                background-color: $yellow;
+                border-radius: 30px;
+                padding: 5px 30px;
+
+                .nav-link {
+                    color: black !important;
+                    cursor: pointer;
+                }
+
+                &:hover {
+                    background-color: hsl(41, 100%, 49%);
+                }
+            }
+        }
+
+        .shape {
+            background-color: #6ed901;
+            position: relative;
+            word-break: break-all;
+            text-align: justify;
+            padding: 10px 0 10px 10px;
+        }
+    }
+
+    .toggler-override {
+        padding: 0;
+    }
+}
+
+#hero {
+    height: 550px;
+    background-size: cover;
+    background-image: url("../images/mobile/image-header.jpg");
+    background-position: center;
+
+    h1 {
+        text-transform: uppercase;
+        letter-spacing: 8px;
+        color: $white;
+        font-family: "Fraunces";
+        font-weight: 900;
+        font-size: 2.5rem;
+        padding-top: 150px;
+    }
+
+    img {
+        margin-top: 45px;
+    }
+}
+
+.double {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    .double-info {
+        padding: 80px 30px;
+
+        h2 {
+            font-family: "Fraunces";
+            font-weight: 900;
+            font-size: 2rem;
+            padding: 0 20px;
+        }
+
+        p {
+            color: $very-dark-grayish-blue;
+            font-family: "Barlow";
+            font-size: 18px;
+            padding: 20px 0;
+        }
+
+        a {
+            color: black;
+            font-family: "Fraunces";
+            font-weight: 900;
+            font-size: 1rem;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        .link-group {
+            display: contents;
+            &:hover {
+                .first-link-bar {
+                    border-color: $yellow;
+                }
+
+                .second-link-bar {
+                    border-color: $soft-red;
+                }
+            }
+        }
+
+        .first-link-bar,
+        .second-link-bar {
+            width: 130px;
+
+            border-radius: 13px;
+            position: relative;
+            left: -5px;
+            top: -10px;
+            z-index: -1;
+        }
+
+        .first-link-bar {
+            border: hsl(51, 93%, 71%) 5px solid;
+        }
+
+        .second-link-bar {
+            border: hsl(7, 94%, 76%) 5px solid;
+        }
+    }
+}
+
+.singular-first {
+    background-image: url("../images/mobile/image-graphic-design.jpg");
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+
+    h2 {
+        color: $dark-desaturated-cyan;
+        font-family: "Fraunces";
+        font-weight: 900;
+        font-size: 2rem;
+        padding-top: 400px;
+        margin-bottom: 25px;
+    }
+
+    p {
+        color: $dark-desaturated-cyan;
+        font-family: "Barlow";
+        font-size: 16px;
+        font-weight: 800;
+        padding: 0px 15px;
+    }
+}
+
+.singular-second {
+    background-image: url("../images/mobile/image-photography.jpg");
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+
+    h2 {
+        color: $dark-blue;
+        font-family: "Fraunces";
+        font-weight: 900;
+        font-size: 2rem;
+        padding-top: 400px;
+        margin-bottom: 25px;
+    }
+
+    p {
+        color: $dark-blue;
+        font-family: "Barlow";
+        font-size: 16px;
+        font-weight: 800;
+        padding: 0px 15px;
+    }
+}
+
+#testimonials {
+    .testimonial {
+        margin-bottom: 100px;
+    }
+
+    .title {
+        text-transform: uppercase;
+        color: $dark-grayish-blue;
+        font-family: "Fraunces";
+        font-weight: 900;
+        font-size: 1rem;
+        letter-spacing: 4px;
+        padding: 60px 0;
+    }
+
+    img {
+        height: 80px;
+        border-radius: 100%;
+        margin-bottom: 40px;
+    }
+
+    p {
+        color: $very-dark-grayish-blue;
+        font-family: "Barlow";
+        font-size: 19px;
+        font-weight: 800;
+        padding: 0px 15px;
+    }
+
+    h3 {
+        font-family: "Fraunces";
+        font-weight: 900;
+        font-size: 1.3rem;
+    }
+
+    .work-title {
+        color: $grayish-blue;
+        font-family: "Barlow";
+        font-size: 16px;
+    }
+}
+
+#projects {
+    padding: 0;
+    img {
+        padding: 0;
+    }
+
+    .second {
+        padding: 0;
+        background-image: url("../images/mobile/image-gallery-orange.jpg");
+    }
+
+    .third {
+        padding: 0;
+        background-image: url("../images/mobile/image-gallery-cone.jpg");
+    }
+
+    .fourth {
+        padding: 0;
+        background-image: url("../images/mobile/image-gallery-sugar-cubes.jpg");
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $light-moderate-cyan;
+    color: $dark-desaturated-cyan;
+
+    h2 {
+        font-size: 2rem;
+        text-transform: lowercase;
+        padding: 50px 0 40px;
+        font-weight: 900;
+    }
+
+    .links {
+        a {
+            text-decoration: none;
+            color: $dark-moderate-cyan;
+            padding: 0 30px;
+            font-weight: 600;
+            font-size: 1.1rem;
+
+            &:hover {
+                color: white;
+            }
+        }
+    }
+
+    .socials {
+        padding: 85px 0;
+        i {
+            margin: 0 15px;
+            font-size: 1.5rem;
+
+            &:hover {
+                color: white;
+            }
+        }
+    }
+}
+
+.attribution {
+    padding-top: 25px;
+    height: 60px;
+    background-color: hsl(167deg 47.03% 82.44%);
+}
+
+/* for sizes below ...*/
+@media (max-width: 767px) {
+    #double-first-img,
+    #double-second-img {
+        img {
+            width: 100%;
+        }
+    }
+
+    .double {
+        .double-info {
+            .first-link-bar,
+            .second-link-bar {
+                left: 0;
+                margin: auto;
+            }
+        }
+    }
+}
+
+/* for sizes below ...*/
+@media (max-width: 991px) {
+    header {
+        .navbar {
+            padding: 25px 15px;
+        }
+
+        .navbar-collapse {
+            .nav-item {
+                margin: 0 20px !important;
+
+                a {
+                    font-size: 1.1rem !important;
+                }
+            }
+
+            /* Small triangle */
+            .navbar-nav {
+                :before {
+                    content: "";
+                    position: absolute;
+                    top: 72px;
+                    right: 28px;
+                    width: 31px;
+                    height: 33px;
+                }
+                :before {
+                    background: linear-gradient(
+                        to top left,
+                        #ffffff 50%,
+                        transparent 51%
+                    );
+                }
+            }
+        }
+    }
+}
+
+/* for sizes above ...*/
+@media (min-width: 499px) {
+    #services {
+        p {
+            padding: 0 20%;
+        }
+    }
+    .singular-first {
+        background-image: url("../images/desktop/image-graphic-design.jpg");
+        background-size: cover;
+    }
+
+    .singular-second {
+        background-image: url("../images/desktop/image-photography.jpg");
+    }
+}
+
+/* for sizes above ...*/
+@media (min-width: 768px) {
+    #hero {
+        background-image: url(../images/desktop/image-header.jpg);
+        height: 800px;
+
+        h1 {
+            font-size: 4rem;
+            padding-top: 180px;
+        }
+
+        img {
+            margin-top: 100px;
+        }
+    }
+
+    .double {
+        flex-direction: row-reverse;
+
+        .double-info {
+            text-align: start;
+            padding: 100px 0px;
+            padding-left: 60px;
+            padding-right: 60px;
+
+            h2 {
+                padding: 0;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+        }
+
+        #double-first-img,
+        #double-second-img {
+            padding: 0;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+
+            img {
+                flex-shrink: 0;
+                min-width: 100%;
+                min-height: 100%;
+            }
+        }
+    }
+
+    #first-double {
+        flex-direction: row;
+    }
+
+    #testimonials {
+        .row {
+            padding: 0 65px;
+        }
+    }
+
+    #projects {
+        #projects-first-image {
+            content: url("../images/desktop/image-gallery-milkbottles.jpg");
+        }
+        #projects-second-image {
+            content: url("../images/desktop/image-gallery-orange.jpg");
+        }
+        #projects-third-image {
+            content: url("../images/desktop/image-gallery-cone.jpg");
+        }
+        #projects-fourth-image {
+            content: url("../images/desktop/image-gallery-sugarcubes.jpg");
+        }
+    }
+}
+
+/* for sizes above ...*/
+@media (min-width: 992px) {
+    header {
+        .navbar-brand {
+            width: 13vw;
+        }
+        padding: 0 40px;
+        .navbar-collapse {
+            background-color: #ffffff00;
+            margin-top: 0px;
+
+            .navbar-nav {
+                margin-left: auto;
+            }
+
+            .contact-button {
+                background-color: white !important;
+                padding: 5px 5px !important;
+
+                &:hover {
+                    background-color: hsla(0, 0%, 100%, 0.369) !important;
+                    .nav-link {
+                        color: $white !important;
+                    }
+                }
+            }
+        }
+        a {
+            color: white !important;
+        }
+    }
+    .double {
+        .double-info {
+            padding-left: 172px !important;
+            padding-right: 90px !important;
+
+            h2 {
+                font-size: 3rem;
+            }
+        }
+    }
+}

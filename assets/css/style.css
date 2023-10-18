@@ -1,0 +1,426 @@
+@font-face {
+  font-family: "Barlow";
+  src: url("../fonts/Barlow/Barlow-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Fraunces";
+  src: url("../fonts/Fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf") format("truetype");
+}
+/* Colors */
+header {
+  width: 100%;
+  position: absolute;
+}
+header #toggler {
+  filter: brightness(0) invert(1);
+  color: hsl(0, 0%, 100%) !important;
+  border: none;
+}
+header #toggler :focus {
+  box-shadow: none !important;
+}
+header .navbar-toggler:focus {
+  box-shadow: none !important;
+}
+header .navbar-collapse {
+  background-color: white;
+  margin-top: 45px;
+  padding: 20px 0;
+}
+header .navbar-collapse .navbar-nav {
+  display: flex;
+  align-items: center;
+}
+header .navbar-collapse .navbar-nav .nav-item {
+  font-size: 1.2rem;
+  font-family: "Barlow";
+  font-weight: 600;
+  margin: 10px;
+}
+header .navbar-collapse .navbar-nav .nav-item .nav-link {
+  color: hsl(232, 10%, 55%);
+}
+header .navbar-collapse .navbar-nav .contact-button {
+  font-family: "Fraunces";
+  text-transform: uppercase;
+  font-weight: 800;
+  background-color: hsl(51, 100%, 49%);
+  border-radius: 30px;
+  padding: 5px 30px;
+}
+header .navbar-collapse .navbar-nav .contact-button .nav-link {
+  color: black !important;
+  cursor: pointer;
+}
+header .navbar-collapse .navbar-nav .contact-button:hover {
+  background-color: hsl(41, 100%, 49%);
+}
+header .navbar-collapse .shape {
+  background-color: #6ed901;
+  position: relative;
+  word-break: break-all;
+  text-align: justify;
+  padding: 10px 0 10px 10px;
+}
+header .toggler-override {
+  padding: 0;
+}
+
+#hero {
+  height: 550px;
+  background-size: cover;
+  background-image: url("../images/mobile/image-header.jpg");
+  background-position: center;
+}
+#hero h1 {
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  color: hsl(0, 0%, 100%);
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 2.5rem;
+  padding-top: 150px;
+}
+#hero img {
+  margin-top: 45px;
+}
+
+.double {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.double .double-info {
+  padding: 80px 30px;
+}
+.double .double-info h2 {
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 2rem;
+  padding: 0 20px;
+}
+.double .double-info p {
+  color: hsl(213, 9%, 39%);
+  font-family: "Barlow";
+  font-size: 18px;
+  padding: 20px 0;
+}
+.double .double-info a {
+  color: black;
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.double .double-info .link-group {
+  display: contents;
+}
+.double .double-info .link-group:hover .first-link-bar {
+  border-color: hsl(51, 100%, 49%);
+}
+.double .double-info .link-group:hover .second-link-bar {
+  border-color: hsl(7, 99%, 70%);
+}
+.double .double-info .first-link-bar,
+.double .double-info .second-link-bar {
+  width: 130px;
+  border-radius: 13px;
+  position: relative;
+  left: -5px;
+  top: -10px;
+  z-index: -1;
+}
+.double .double-info .first-link-bar {
+  border: hsl(51, 93%, 71%) 5px solid;
+}
+.double .double-info .second-link-bar {
+  border: hsl(7, 94%, 76%) 5px solid;
+}
+
+.singular-first {
+  background-image: url("../images/mobile/image-graphic-design.jpg");
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+}
+.singular-first h2 {
+  color: hsl(167, 40%, 24%);
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 2rem;
+  padding-top: 400px;
+  margin-bottom: 25px;
+}
+.singular-first p {
+  color: hsl(167, 40%, 24%);
+  font-family: "Barlow";
+  font-size: 16px;
+  font-weight: 800;
+  padding: 0px 15px;
+}
+
+.singular-second {
+  background-image: url("../images/mobile/image-photography.jpg");
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+}
+.singular-second h2 {
+  color: hsl(198, 62%, 26%);
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 2rem;
+  padding-top: 400px;
+  margin-bottom: 25px;
+}
+.singular-second p {
+  color: hsl(198, 62%, 26%);
+  font-family: "Barlow";
+  font-size: 16px;
+  font-weight: 800;
+  padding: 0px 15px;
+}
+
+#testimonials .testimonial {
+  margin-bottom: 100px;
+}
+#testimonials .title {
+  text-transform: uppercase;
+  color: hsl(232, 10%, 55%);
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 1rem;
+  letter-spacing: 4px;
+  padding: 60px 0;
+}
+#testimonials img {
+  height: 80px;
+  border-radius: 100%;
+  margin-bottom: 40px;
+}
+#testimonials p {
+  color: hsl(213, 9%, 39%);
+  font-family: "Barlow";
+  font-size: 19px;
+  font-weight: 800;
+  padding: 0px 15px;
+}
+#testimonials h3 {
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 1.3rem;
+}
+#testimonials .work-title {
+  color: hsl(210, 4%, 67%);
+  font-family: "Barlow";
+  font-size: 16px;
+}
+
+#projects {
+  padding: 0;
+}
+#projects img {
+  padding: 0;
+}
+#projects .second {
+  padding: 0;
+  background-image: url("../images/mobile/image-gallery-orange.jpg");
+}
+#projects .third {
+  padding: 0;
+  background-image: url("../images/mobile/image-gallery-cone.jpg");
+}
+#projects .fourth {
+  padding: 0;
+  background-image: url("../images/mobile/image-gallery-sugar-cubes.jpg");
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #90d4c5;
+  color: hsl(167, 40%, 24%);
+}
+footer h2 {
+  font-size: 2rem;
+  text-transform: lowercase;
+  padding: 50px 0 40px;
+  font-weight: 900;
+}
+footer .links a {
+  text-decoration: none;
+  color: hsl(168, 34%, 41%);
+  padding: 0 30px;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+footer .links a:hover {
+  color: white;
+}
+footer .socials {
+  padding: 85px 0;
+}
+footer .socials i {
+  margin: 0 15px;
+  font-size: 1.5rem;
+}
+footer .socials i:hover {
+  color: white;
+}
+
+.attribution {
+  padding-top: 25px;
+  height: 60px;
+  background-color: hsl(167, 47.03%, 82.44%);
+}
+
+/* for sizes below ...*/
+@media (max-width: 767px) {
+  #double-first-img img,
+  #double-second-img img {
+    width: 100%;
+  }
+  .double .double-info .first-link-bar,
+  .double .double-info .second-link-bar {
+    left: 0;
+    margin: auto;
+  }
+}
+/* for sizes below ...*/
+@media (max-width: 991px) {
+  header .navbar {
+    padding: 25px 15px;
+  }
+  header .navbar-collapse {
+    /* Small triangle */
+  }
+  header .navbar-collapse .nav-item {
+    margin: 0 20px !important;
+  }
+  header .navbar-collapse .nav-item a {
+    font-size: 1.1rem !important;
+  }
+  header .navbar-collapse .navbar-nav :before {
+    content: "";
+    position: absolute;
+    top: 72px;
+    right: 28px;
+    width: 31px;
+    height: 33px;
+  }
+  header .navbar-collapse .navbar-nav :before {
+    background: linear-gradient(to top left, #ffffff 50%, transparent 51%);
+  }
+}
+/* for sizes above ...*/
+@media (min-width: 499px) {
+  #services p {
+    padding: 0 20%;
+  }
+  .singular-first {
+    background-image: url("../images/desktop/image-graphic-design.jpg");
+    background-size: cover;
+  }
+  .singular-second {
+    background-image: url("../images/desktop/image-photography.jpg");
+  }
+}
+/* for sizes above ...*/
+@media (min-width: 768px) {
+  #hero {
+    background-image: url(../images/desktop/image-header.jpg);
+    height: 800px;
+  }
+  #hero h1 {
+    font-size: 4rem;
+    padding-top: 180px;
+  }
+  #hero img {
+    margin-top: 100px;
+  }
+  .double {
+    flex-direction: row-reverse;
+  }
+  .double .double-info {
+    text-align: start;
+    padding: 100px 0px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .double .double-info h2 {
+    padding: 0;
+  }
+  .double .double-info p {
+    font-size: 1.2rem;
+  }
+  .double #double-first-img,
+  .double #double-second-img {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .double #double-first-img img,
+  .double #double-second-img img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  #first-double {
+    flex-direction: row;
+  }
+  #testimonials .row {
+    padding: 0 65px;
+  }
+  #projects #projects-first-image {
+    content: url("../images/desktop/image-gallery-milkbottles.jpg");
+  }
+  #projects #projects-second-image {
+    content: url("../images/desktop/image-gallery-orange.jpg");
+  }
+  #projects #projects-third-image {
+    content: url("../images/desktop/image-gallery-cone.jpg");
+  }
+  #projects #projects-fourth-image {
+    content: url("../images/desktop/image-gallery-sugarcubes.jpg");
+  }
+}
+/* for sizes above ...*/
+@media (min-width: 992px) {
+  header {
+    padding: 0 40px;
+  }
+  header .navbar-brand {
+    width: 13vw;
+  }
+  header .navbar-collapse {
+    background-color: rgba(255, 255, 255, 0);
+    margin-top: 0px;
+  }
+  header .navbar-collapse .navbar-nav {
+    margin-left: auto;
+  }
+  header .navbar-collapse .contact-button {
+    background-color: white !important;
+    padding: 5px 5px !important;
+  }
+  header .navbar-collapse .contact-button:hover {
+    background-color: hsla(0, 0%, 100%, 0.369) !important;
+  }
+  header .navbar-collapse .contact-button:hover .nav-link {
+    color: hsl(0, 0%, 100%) !important;
+  }
+  header a {
+    color: white !important;
+  }
+  .double .double-info {
+    padding-left: 172px !important;
+    padding-right: 90px !important;
+  }
+  .double .double-info h2 {
+    font-size: 3rem;
+  }
+}/*# sourceMappingURL=style.css.map */
