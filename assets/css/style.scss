@@ -148,7 +148,7 @@ header {
 
         .link-group {
             display: contents;
-            &:hover {
+            :hover {
                 .first-link-bar {
                     border-color: $yellow;
                 }
@@ -162,7 +162,6 @@ header {
         .first-link-bar,
         .second-link-bar {
             width: 130px;
-
             border-radius: 13px;
             position: relative;
             left: -5px;
