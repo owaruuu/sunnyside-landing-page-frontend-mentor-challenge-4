@@ -56,6 +56,16 @@ Used 'display: content:' to avoid incrementing the area for :hover
 ```css
 .link-group {
     display: content;
+
+    :hover {
+        .first-link-bar {
+            border-color: $yellow;
+        }
+    
+        .second-link-bar {
+            border-color: $soft-red;
+        }
+    }
 }
 
 .first-link-bar,
@@ -68,6 +78,7 @@ Used 'display: content:' to avoid incrementing the area for :hover
     z-index: -1;
 }
 ```
+The parent div itself receives the :hover but the empty divs inside are what is modified
 
 ## Author
 
