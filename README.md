@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Solution](https://your-solution-url.com)
--   Live Site URL: [Live site](https://your-live-site-url.com)
+-   Solution URL: [Solution](https://www.frontendmentor.io/solutions/responsive-landing-page-bootstrap-sass-NEk2PZ8ng4)
+-   Live Site URL: [Live site](owaruuu.github.io/sunnyside-landing-page-frontend-mentor-challenge-4/)
 
 ### Built with
 
